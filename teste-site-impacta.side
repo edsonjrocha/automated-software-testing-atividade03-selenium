@@ -1,0 +1,140 @@
+{
+  "id": "a7bef378-8b35-47c1-b5dc-50054e478365",
+  "version": "2.0",
+  "name": "teste-site-impacta",
+  "url": "https://www.impacta.edu.br",
+  "tests": [{
+    "id": "48605d2d-13b8-47ae-9e1f-5ae5879423ad",
+    "name": "teste_nome_coordenador",
+    "commands": [{
+      "id": "e262d386-2b89-42c5-a8a7-22901672d80c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e63b65cd-671c-4838-9eb1-a3455238ed82",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1456x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c18174bd-c93e-468d-a7bd-bdf8bf82d3b3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.active .img-responsive",
+      "targets": [
+        ["css=.active .img-responsive", "css:finder"],
+        ["xpath=(//img[@alt='Banner home'])[2]", "xpath:img"],
+        ["xpath=//div[@id='slide-home']/div/div/div[3]/div/a/picture/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebf9a9ad-d184-45b1-a98d-f122cd0a7259",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.active .img-responsive",
+      "targets": [
+        ["css=.active .img-responsive", "css:finder"],
+        ["xpath=(//img[@alt='Banner home'])[2]", "xpath:img"],
+        ["xpath=//div[@id='slide-home']/div/div/div[3]/div/a/picture/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e4b8209-0c0c-4715-b2f0-7639e2f02fd3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//nav[@id='navigation']/div/div[2]/div[2]/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ea46421-184f-4cd1-b1e0-464a2fcb83f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-search",
+      "targets": [
+        ["css=.fa-search", "css:finder"],
+        ["xpath=//nav[@id='navigation']/div/div[2]/div[2]/div/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b23f380-d5f1-49ab-9a9d-ac160f835034",
+      "comment": "",
+      "command": "type",
+      "target": "id=busca",
+      "targets": [
+        ["id=busca", "id"],
+        ["name=busca", "name"],
+        ["css=#busca", "css:finder"],
+        ["xpath=//input[@id='busca']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "engenharia de software"
+    }, {
+      "id": "86cd12d5-a379-4eef-9581-c7e70633fb07",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=busca",
+      "targets": [
+        ["id=busca", "id"],
+        ["name=busca", "name"],
+        ["css=#busca", "css:finder"],
+        ["xpath=//input[@id='busca']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "59b07e5e-1119-418a-980a-8edfd44650f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.padding-lr-25:nth-child(1) h3",
+      "targets": [
+        ["css=.padding-lr-25:nth-child(1) h3", "css:finder"],
+        ["xpath=//main[@id='page-busca']/section[2]/section/ul/li/div[2]/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Engenharia de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66266152-9386-46d5-b464-1350caf7189d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,3800)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5358574f-d870-4991-9b58-a1a0cbd52353",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-xs-6 > .section_title",
+      "targets": [
+        ["css=.col-xs-6 > .section_title", "css:finder"],
+        ["xpath=//main[@id='page-mba']/div/div[3]/div/div[2]/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Marcus Vinícius Almeida Silva')]", "xpath:innerText"]
+      ],
+      "value": "Marcus Vinícius Almeida Silva"
+    }]
+  }],
+  "suites": [{
+    "id": "8e60b327-763a-4dbc-b195-d2e7bc931e23",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["48605d2d-13b8-47ae-9e1f-5ae5879423ad"]
+  }],
+  "urls": ["https://www.impacta.edu.br/"],
+  "plugins": []
+}
